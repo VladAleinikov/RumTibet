@@ -1,0 +1,20 @@
+.btn{
+      cursor: pointer;
+      padding: 12px 24px;
+      width: fit-content;
+      color: $text-light;
+      font-size: 16px;
+      font-weight: 600;
+      background: $main;
+      border-radius: 4px;
+      border: 1px solid $main;
+      transition: .5s;
+
+      &.btn-big{
+            padding: 16px 36px;
+      }
+      &:hover{
+            background: $text-light;
+            color: $main;
+      }
+}
