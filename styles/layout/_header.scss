@@ -1,0 +1,28 @@
+.header-container {
+      height: 72px;
+      margin-top: 16px;
+      @include flex($justify: space-between);
+
+      .header__logo {
+            width: 137px;
+      }
+      .header__nav {
+            @include flex($justify: space-between);
+            gap: 50px;
+
+            .nav__list {
+                  @include flex(row, space-between);
+
+                  .item__link{
+                        color: $text-light;
+                        font-size: 18px;
+                        font-weight: 600;
+                        transition: .5s;
+
+                        &:hover{
+                              color: $secondary;
+                        }
+                  }
+            }
+      }
+}
