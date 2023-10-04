@@ -1,0 +1,61 @@
+.about {
+      padding: 100px 0;
+}
+.about-container {
+      @include flex($justify: space-between);
+
+      .about__video {
+            position: relative;
+            width: 42%;
+            max-width: 480px;
+            min-height: 526px;
+
+            img {
+                  width: 350px;
+                  height: 400px;
+
+                  &:nth-child(1) {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                  }
+                  &:nth-child(2) {
+                        cursor: pointer;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+
+                        &:hover ~ button path {
+                              fill: $secondary;
+                        }
+                  }
+            }
+            button {
+                  cursor: pointer;
+                  position: absolute;
+                  width: 50px;
+                  height: 50px;
+                  bottom: 0;
+                  right: 0;
+                  margin: 175px 150px;
+                  border-radius: 100%;
+                  background: rgba($color: $text-light, $alpha: 0.6);
+
+                  path {
+                        transition: 0.5s;
+                  }
+                  &:hover path {
+                        fill: $secondary;
+                  }
+            }
+      }
+      .about__content {
+            width: 50%;
+            @include flex(column, start, start);
+            gap: 40px;
+
+            .subtitle{
+                  margin-bottom: -12px;
+            }
+      }
+}
