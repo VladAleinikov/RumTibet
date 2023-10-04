@@ -2,6 +2,7 @@
       height: 72px;
       margin-top: 16px;
       @include flex($justify: space-between);
+      z-index: 10;
 
       .header__logo {
             width: 137px;
@@ -12,14 +13,16 @@
 
             .nav__list {
                   @include flex(row, space-between);
+                  gap: 24px;
 
-                  .item__link{
+                  .item__link {
+                        cursor: pointer;
                         color: $text-light;
                         font-size: 18px;
                         font-weight: 600;
-                        transition: .5s;
+                        transition: 0.5s;
 
-                        &:hover{
+                        &:hover {
                               color: $secondary;
                         }
                   }

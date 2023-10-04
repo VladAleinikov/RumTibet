@@ -1,0 +1,77 @@
+.hero {
+      position: relative;
+
+      height: 985px;
+
+      .hero-bg {
+            position: absolute;
+            top: -88px;
+            left: 0;
+            min-width: 100%;
+            min-height: calc(100% + 88px);
+            object-fit: cover;
+            z-index: -1;
+      }
+}
+.hero-container {
+      height: 100%;
+      @include flex(column, end, start);
+      gap: 40px;
+      padding-bottom: 80px;
+
+      h1 {
+            max-width: 92%;
+      }
+      .hero__form {
+            @include flex($justify: space-between, $align: start);
+            width: 100%;
+            padding: 40px 42px;
+            border-radius: 10px;
+            background: rgba($color: $white, $alpha: 0.2);
+
+            .form__input-block {
+                  height: 100%;
+                  @include flex(column, space-between, start);
+
+                  select,
+                  .dates {
+                        @include flex($justify: space-between);
+                        width: 270px;
+                        height: 48px;
+                        padding: 14px 16px;
+                        color: $text-light;
+                        font-size: 16px;
+                        font-weight: 700;
+                        background: transparent;
+                        border-radius: 8px;
+                        border: 1px solid #e1e3e4;
+                        appearance: none;
+                  }
+                  .dates {
+                        input {
+                              color: $text-light;
+                              font-size: 16px;
+                              font-weight: 700;
+                              background: transparent;
+                        }
+                  }
+                  label {
+                        color: $text-light;
+                        font-size: 14px;
+                        margin: 0 10px;
+                        margin-top: 8px;
+                  }
+            }
+            .btn {
+                  color: $main;
+                  background: $text-light;
+                  border: 1px solid $text-light;
+
+                  &:hover {
+                        color: $text-light;
+                        background: $main;
+                        border: 1px solid $main;
+                  }
+            }
+      }
+}
