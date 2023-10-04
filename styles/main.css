@@ -4,10 +4,12 @@
   font-weight: 700;
   src: url("../../font/nextart/NEXT ART_Bold.otf");
 }
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   color: #18121E;
   text-decoration: none;
@@ -37,6 +39,7 @@ a {
 .btn {
   cursor: pointer;
   padding: 12px 24px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #FDFDFD;
@@ -45,11 +48,14 @@ a {
   background: #1a3e3e;
   border-radius: 4px;
   border: 1px solid #1a3e3e;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
 .btn.btn-big {
   padding: 16px 36px;
 }
+
 .btn:hover {
   background: #FDFDFD;
   color: #1a3e3e;
@@ -61,7 +67,8 @@ h1 {
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 75px */
+  line-height: 150%;
+  /* 75px */
   letter-spacing: 1px;
 }
 
@@ -100,6 +107,7 @@ p {
   font-weight: 400;
   line-height: 20px;
 }
+
 p.big {
   font-size: 18px;
   line-height: 150%;
@@ -114,44 +122,78 @@ p.big {
 .header-container {
   height: 72px;
   margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
 }
+
 .header-container .header__logo {
   width: 137px;
 }
+
 .header-container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
 }
+
 .header-container .header__nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
 }
+
 .header-container .header__nav .nav__list .item__link {
   cursor: pointer;
   color: #FDFDFD;
   font-size: 18px;
   font-weight: 600;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .header-container .header__nav .nav__list .item__link:hover {
   color: #f2be22;
 }
 
 .hero {
   position: relative;
-  height: 985px;
+  height: 900px;
 }
+
 .hero .hero-bg {
   position: absolute;
   top: -88px;
@@ -165,39 +207,79 @@ p.big {
 
 .hero-container {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 40px;
   padding-bottom: 80px;
 }
+
 .hero-container h1 {
   max-width: 92%;
 }
+
 .hero-container .hero__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   width: 100%;
   padding: 40px 42px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
 }
+
 .hero-container .hero__form .form__input-block {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
+
 .hero-container .hero__form .form__input-block select,
 .hero-container .hero__form .form__input-block .dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 270px;
   height: 48px;
   padding: 14px 16px;
@@ -211,25 +293,30 @@ p.big {
      -moz-appearance: none;
           appearance: none;
 }
+
 .hero-container .hero__form .form__input-block .dates input {
   color: #FDFDFD;
   font-size: 16px;
   font-weight: 700;
   background: transparent;
 }
+
 .hero-container .hero__form .form__input-block label {
   color: #FDFDFD;
   font-size: 14px;
   margin: 0 10px;
   margin-top: 8px;
 }
+
 .hero-container .hero__form .btn {
   color: #1a3e3e;
   background: #FDFDFD;
   border: 1px solid #FDFDFD;
 }
+
 .hero-container .hero__form .btn:hover {
   color: #FDFDFD;
   background: #1a3e3e;
   border: 1px solid #1a3e3e;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
