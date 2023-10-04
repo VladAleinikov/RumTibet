@@ -1,0 +1,48 @@
+.services {
+      padding-top: 80px;
+      padding-bottom: 100px;
+      background: #f3f5f4;
+}
+.services-container {
+      width: 100%;
+      @include flex($justify: space-between);
+
+      .services__content {
+            width: 50%;
+            @include flex(column, start, start);
+            gap: 40px;
+
+            .subtitle {
+                  margin-bottom: -12px;
+            }
+            .content__list {
+                  @include flex(column, start, start);
+                  gap: 40px;
+
+                  .list__item {
+                        @include flex();
+                        gap: 16px;
+
+                        img{
+                              width: 50px;
+                              height: 50px;
+                        }
+                        .item__content {
+                              @include flex(column, start, start);
+                              gap: 4px;
+                        }
+                  }
+            }
+      }
+      .services__imgs{
+            min-width: 510px;
+            @include flex(row, end);
+            flex-wrap: wrap;
+            gap: 10px;
+
+            img{
+                  width: 250px;
+                  height: 250px;
+            }
+      }
+}
