@@ -40,6 +40,40 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container container">
+          <h1>Насладись прогулкой в горах с командой единомышленников</h1>
+          <form action="" class="hero__form">
+            <div class="form__input-block form__location">
+              <select name="location" id="location">
+                <option value="default" selected>Локации для тура</option>
+                <option value="british">Великобритания</option>
+                <option value="russia">Россия</option>
+                <option value="usa">США</option>
+              </select>
+              <label for="location">выберете из списка</label>
+            </div>
+            <div class="form__input-block form__date">
+              <input type="date" name="date" id="date-start" />
+              <input type="date" name="date" id="date-end" />
+              <label for="date">укажите диапазон</label>
+            </div>
+            <div class="form__input-block form__persons">
+              <select name="persons" id="persons">
+                <option value="default" selected>Участники</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <label for="persons">минимум 4 человека</label>
+            </div>
+            <button class="btn">Найти программу</button>
+          </form>
+        </div>
+        <img src="./assets/hero/hero-bg.png" alt="hero-bg" class="hero-bg">
+      </section>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>
