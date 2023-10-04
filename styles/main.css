@@ -103,4 +103,10 @@ p {
 p.big {
   font-size: 18px;
   line-height: 150%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1212px;
 }/*# sourceMappingURL=main.css.map */
