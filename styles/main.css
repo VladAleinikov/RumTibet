@@ -609,6 +609,9 @@ p.big {
   gap: 8px;
   min-width: 30%;
 }
+.form-container .form__title .subtitle {
+  font-size: 18px;
+}
 .form-container form {
   display: flex;
   flex-direction: column;

@@ -16,6 +16,10 @@
             @include flex(column, start, start);
             gap: 8px;
             min-width: 30%;
+
+            .subtitle{
+                  font-size: 18px;
+            }
       }
       form {
             @include flex(column, start, start);
