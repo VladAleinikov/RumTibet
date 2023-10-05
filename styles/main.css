@@ -741,24 +741,24 @@ p.big {
   fill: #f2be22;
 }
 
-.footer__copyright {
+.copyright {
   padding: 24px 0;
   background: #18121e;
 }
-.footer__copyright .copyright-container {
+.copyright .copyright-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.footer__copyright .copyright-container p {
+.copyright .copyright-container p {
   color: #FDFDFD;
   transition: 0.5s;
 }
-.footer__copyright .copyright-container p:nth-child(2) {
+.copyright .copyright-container p:nth-child(2) {
   cursor: pointer;
   text-decoration: underline;
 }
-.footer__copyright .copyright-container p:nth-child(2):hover {
+.copyright .copyright-container p:nth-child(2):hover {
   color: #f2be22;
 }/*# sourceMappingURL=main.css.map */
