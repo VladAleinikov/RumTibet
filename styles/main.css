@@ -386,7 +386,7 @@ p.big {
 }
 .popular-directions-container .popular-direction__cards .popular-direction__card {
   position: relative;
-  width: 380px;
+  min-width: 380px;
   height: 500px;
   overflow: hidden;
   border-radius: 32px;
