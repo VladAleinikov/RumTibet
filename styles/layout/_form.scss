@@ -6,6 +6,7 @@
 .form-container {
       @include flex(row, space-between, start);
       gap: 64px;
+      width: 1180px;
       padding: 100px 40px;
       border-radius: 6px;
       background: $text-light;

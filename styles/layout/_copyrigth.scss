@@ -1,0 +1,22 @@
+.footer__copyright {
+      padding: 24px 0;
+      background: #18121e;
+
+      .copyright-container {
+            @include flex($justify: space-between);
+
+            p{
+                  color: $text-light;
+                  transition: .5s;
+
+                  &:nth-child(2){
+                        cursor: pointer;
+                        text-decoration: underline;
+
+                        &:hover{
+                              color: $secondary;
+                        }
+                  }
+            }
+      }
+}

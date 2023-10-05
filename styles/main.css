@@ -595,6 +595,7 @@ p.big {
   justify-content: space-between;
   align-items: start;
   gap: 64px;
+  width: 1180px;
   padding: 100px 40px;
   border-radius: 6px;
   background: #FDFDFD;
@@ -641,4 +642,123 @@ p.big {
   font-style: normal;
   font-weight: 300;
   line-height: 20px;
+}
+
+.footer {
+  background: #1a3e3e;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-container h4,
+.footer-container p,
+.footer-container a {
+  color: #FDFDFD;
+}
+.footer-container .content__description {
+  max-width: 480px;
+}
+.footer-container .content__description h4 {
+  margin-bottom: 17px;
+}
+.footer-container .content__description p {
+  margin-bottom: 80px;
+}
+.footer-container .content__description a {
+  margin-right: 24px;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.footer-container .content__description a:hover {
+  color: #f2be22;
+}
+.footer-container .content__description .description__social {
+  margin-top: 32px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 16px;
+}
+.footer-container .content__description .description__social svg {
+  cursor: pointer;
+}
+.footer-container .content__description .description__social path {
+  transition: 0.5s;
+}
+.footer-container .content__description .description__social svg:hover path {
+  fill: #f2be22;
+}
+.footer-container .content__services,
+.footer-container .content__important {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.footer-container .content__services ul,
+.footer-container .content__important ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+}
+.footer-container .content__services ul li,
+.footer-container .content__important ul li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+}
+.footer-container .content__services ul li svg,
+.footer-container .content__important ul li svg {
+  margin-top: 4px;
+}
+.footer-container .content__services ul li p,
+.footer-container .content__services ul li path,
+.footer-container .content__important ul li p,
+.footer-container .content__important ul li path {
+  transition: 0.5s;
+}
+.footer-container .content__services ul li:hover p,
+.footer-container .content__important ul li:hover p {
+  color: #f2be22;
+}
+.footer-container .content__services ul li:hover path,
+.footer-container .content__important ul li:hover path {
+  fill: #f2be22;
+}
+
+.footer__copyright {
+  padding: 24px 0;
+  background: #18121e;
+}
+.footer__copyright .copyright-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright .copyright-container p {
+  color: #FDFDFD;
+  transition: 0.5s;
+}
+.footer__copyright .copyright-container p:nth-child(2) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer__copyright .copyright-container p:nth-child(2):hover {
+  color: #f2be22;
 }/*# sourceMappingURL=main.css.map */

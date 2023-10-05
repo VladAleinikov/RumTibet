@@ -1,0 +1,81 @@
+.footer {
+      background: $main;
+}
+.footer-container {
+      @include flex(row, space-between, start);
+
+      h4,
+      p,
+      a {
+            color: $text-light;
+      }
+      .content__description {
+            max-width: 480px;
+            h4 {
+                  margin-bottom: 17px;
+            }
+            p {
+                  margin-bottom: 80px;
+            }
+            a {
+                  margin-right: 24px;
+                  text-decoration: underline;
+                  transition: 0.5s;
+
+                  &:hover {
+                        color: $secondary;
+                  }
+            }
+            .description__social {
+                  margin-top: 32px;
+                  margin-bottom: 80px;
+                  @include flex();
+                  width: fit-content;
+                  gap: 16px;
+
+                  svg{
+                        cursor: pointer;
+                  }
+                  path{
+                        transition: .5s;
+                  }
+                  svg:hover path{
+                        fill:$secondary;
+                  }
+            }
+      }
+      .content__services,
+      .content__important {
+            max-width: 280px;
+            @include flex(column, start, start);
+            gap: 20px;
+
+            ul {
+                  @include flex(column, start, start);
+                  gap: 16px;
+
+                  li {
+                        cursor: pointer;
+                        @include flex(row, start, start);
+                        gap: 4px;
+
+                        svg {
+                              margin-top: 4px;
+                        }
+                        p,
+                        path {
+                              transition: 0.5s;
+                        }
+
+                        &:hover {
+                              p {
+                                    color: $secondary;
+                              }
+                              path {
+                                    fill: $secondary;
+                              }
+                        }
+                  }
+            }
+      }
+}
