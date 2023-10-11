@@ -59,3 +59,16 @@
             }
       }
 }
+.about-modal{
+      width: 960px;
+      height: 540px;
+      top: calc(50% - 270px);
+      left: calc(50% - 480px);
+      overflow: hidden;
+
+      video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      }
+}

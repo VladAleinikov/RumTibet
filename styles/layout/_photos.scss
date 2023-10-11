@@ -47,3 +47,14 @@
             }
       }
 }
+.photos-modal{
+      width: 960px;
+      height: 540px;
+      top: calc(50% - 270px);
+      left: calc(50% - 480px);
+      overflow: hidden;
+
+      img{
+            object-fit: cover;
+      }
+}
