@@ -26,3 +26,13 @@ li {
 a {
       text-decoration: none;
 }
+@media (min-width: 769px) {
+      .mob{
+            display: none !important;
+      }
+}
+@media (max-width: 768px) {
+      .desc{
+            display: none !important;
+      }
+}
