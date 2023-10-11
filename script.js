@@ -39,3 +39,15 @@ photos.map((photo, id) => {
             body.classList.add("modal-active");
       })
 })
+
+// burger
+const burger = document.querySelector(".header__burger");
+const nav = document.querySelector(".header__nav");
+const closeBurger = document.getElementById("close-burger");
+
+burger.addEventListener("click", e => {
+      nav.classList.add("active");
+})
+closeBurger.addEventListener("click", e => {
+      nav.classList.remove("active");
+})

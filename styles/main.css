@@ -240,6 +240,74 @@ p.big {
   color: #f2be22;
 }
 
+@media (max-width: 768px) {
+  .header-container .header__nav {
+    position: fixed;
+    padding-left: 16px;
+    padding-top: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    top: 0%;
+    background: #1a3e3e;
+    z-index: 10000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-container .header__nav .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header-container .header__nav .nav__list .item__link {
+    position: relative;
+    padding-left: 18px;
+  }
+  .header-container .header__nav .nav__list .item__link:before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .header-container .header__nav .nav__list .item__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #f2be22;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .header-container .header__nav .nav__list .item__link:hover::after {
+    width: 100%;
+  }
+  .header-container .header__nav.active {
+    right: 0;
+  }
+  .header-container .header__nav #close-burger {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
 .hero {
   position: relative;
   height: 900px;
