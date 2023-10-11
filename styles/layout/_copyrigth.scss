@@ -20,3 +20,28 @@
             }
       }
 }
+@media (max-width: 768px) {
+      .copyright {
+      padding: 20px 0 !important;
+      background: #18121e;
+
+      .copyright-container {
+            @include flex(column);
+            gap: 8px;
+
+            p{
+                  color: $text-light;
+                  transition: .5s;
+
+                  &:nth-child(2){
+                        cursor: pointer;
+                        text-decoration: underline;
+
+                        &:hover{
+                              color: $secondary;
+                        }
+                  }
+            }
+      }
+}
+}

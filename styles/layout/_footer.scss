@@ -66,7 +66,7 @@
                               color: #1a3e3e;
                               font-size: 12px;
                               font-weight: 700;
-                              line-height: 16px; 
+                              line-height: 16px;
                         }
                         svg {
                               margin-top: 4px;
@@ -84,6 +84,23 @@
                                     fill: $secondary;
                               }
                         }
+                  }
+            }
+      }
+}
+@media (max-width: 768px) {
+      .footer-container {
+            @include flex(column, space-between, start);
+            gap: 50px;
+            padding: 50px 16px;
+            padding-bottom: 80px;
+
+            .content__description {
+                  p {
+                        margin-bottom: 30px;
+                  }
+                  .description__social {
+                        margin-bottom: 0px;
                   }
             }
       }

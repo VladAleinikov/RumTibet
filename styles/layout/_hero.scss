@@ -23,6 +23,7 @@
       }
       .hero__form {
             @include flex($justify: space-between, $align: start);
+            flex-wrap: wrap;
             width: 100%;
             padding: 40px 42px;
             border-radius: 10px;
@@ -72,5 +73,14 @@
                         border: 1px solid $main;
                   }
             }
+      }
+      .btn.mob {
+            background: $white;
+            color: $main;
+      }
+}
+@media (max-width: 768px) {
+      .hero {
+            height: 600px;
       }
 }

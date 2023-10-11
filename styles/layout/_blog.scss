@@ -37,7 +37,8 @@
                         align-content: space-between;
                         flex-wrap: wrap;
 
-                        .card__date, .card__more{
+                        .card__date,
+                        .card__more {
                               font-family: Nunito Sans;
                               font-size: 14px;
                               font-style: normal;
@@ -51,9 +52,30 @@
                               color: #1a3e3e;
                         }
                   }
-                  &:hover{
-                        h3, .card__more{
+                  &:hover {
+                        h3,
+                        .card__more {
                               text-decoration: underline;
+                        }
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .blog-container {
+            .blog__cards {
+                  width: 100%;
+                  @include flex($justify: start);
+                  gap: 20px;
+                  overflow-x: scroll;
+                  flex-wrap: nowrap;
+
+                  .blog__card {
+                        @include flex(column);
+                        .card__content {
+                              height: 255px;
+                              gap: 16px;
                         }
                   }
             }

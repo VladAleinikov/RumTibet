@@ -20,7 +20,7 @@
             .photos__item {
                   cursor: pointer;
                   position: relative;
-                        height: 250px;
+                  height: 250px;
 
                   .item__zoom {
                         position: absolute;
@@ -47,14 +47,38 @@
             }
       }
 }
-.photos-modal{
+.photos-modal {
       width: 960px;
       height: 540px;
       top: calc(50% - 270px);
       left: calc(50% - 480px);
       overflow: hidden;
 
-      img{
+      img {
             object-fit: cover;
+      }
+}
+@media (max-width: 768px) {
+      .photos-container {
+            gap: 32px;
+
+            .photos__list {
+                  width: 100%;
+                  @include flex($justify: start);
+                  gap: 20px;
+                  overflow-x: scroll;
+                  flex-wrap: nowrap;
+
+                  .photos__item img {
+                        border-radius: 6px;
+                        width: 280px !important;
+                  }
+            }
+      }
+      .photos-modal {
+            width: 100%;
+            height: 540px;
+            top: 20px;
+            left: 0;
       }
 }

@@ -41,7 +41,7 @@
                         transition: 1s;
                   }
                   .card__content {
-                        @include flex(row, space-between, start);
+                        @include flex(row, space-between, center);
                         align-content: start;
                         flex-wrap: wrap;
                         width: 100%;

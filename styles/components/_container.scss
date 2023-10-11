@@ -3,3 +3,9 @@
       padding: 0 16px;
       max-width: 1212px;
 }
+@media (max-width: 768px) {
+      section {
+            padding-top: 50px !important; 
+            padding-bottom: 50px !important;
+      }
+}

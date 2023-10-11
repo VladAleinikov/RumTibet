@@ -8,12 +8,13 @@
             width: 137px;
       }
       .header__nav {
-            @include flex($justify: space-between);
-            gap: 50px;
+            @include flex($justify: end);
+            flex-wrap: wrap;
 
             .nav__list {
                   @include flex(row, space-between);
                   gap: 24px;
+                  margin-right: 50px;
 
                   .item__link {
                         cursor: pointer;
@@ -31,6 +32,7 @@
 }
 @media (max-width: 768px) {
       .header-container .header__nav {
+            @include flex($justify: start);
             position: fixed;
             padding-left: 16px;
             padding-top: 50px;
@@ -49,6 +51,7 @@
                   .item__link{
                         position: relative;
                         padding-left: 18px;
+                        font-size: 14px;
 
                         &:before{
                               content: ">";
